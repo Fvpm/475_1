@@ -47,7 +47,7 @@ figcaption{
   font-weight:bold;
 }
 /* Hide tab-desk class.*/
-.tab-desk {
+.tab-desk, #menu-links {
     display: none;
 }
 /* Style rules for header content */
@@ -64,17 +64,28 @@ header h1 {
 nav {
     background-color: #373684;
 }
- 
-nav ul {
-    list-style-type: none;
+.mobile-nav a {
+    color: #fff;
     text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
 }
  
-nav li {
+.mobile-nav a.menu-icon {
     display: block;
-    font-size: 2em;
-    border-top: 1px solid #e5e9fc;
+    position: absolute;
+    right: 0; 
+    top: 0;  
 }
+ 
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+}
+
  
 nav li a {
     display: block;
@@ -235,6 +246,10 @@ footer a {
   nav li a{
     padding: 0.25em 0.5em;
   }
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
   /* Tablet Viewport: Style rule for map */
   .map{
     width: 500px;
@@ -268,6 +283,7 @@ footer a {
   nav li a:hover{
     color: #373684;
     background-color: #e5e9fc;
+    transform: scale(1.2)
   }
   /*Desktop Viewport: Style rules for main content.*/
   #info ul{
